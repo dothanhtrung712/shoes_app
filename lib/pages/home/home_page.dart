@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:shoes_app/app/routers.dart';
 import 'package:shoes_app/models/models.dart';
 import 'package:shoes_app/pages/measuresize/measuresize_page.dart';
 import 'package:shoes_app/pages/size/size_page.dart';
-import 'package:shoes_app/routers/routers.dart';
 
 import '../../resources/resources.dart';
 

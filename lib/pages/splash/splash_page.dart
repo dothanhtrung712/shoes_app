@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:shoes_app/routers/routers.dart';
+import 'package:shoes_app/app/routers.dart';
 import '../../resources/resources.dart';
 
 class SplashPage extends StatefulWidget {
@@ -15,10 +15,11 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Timer(
-      Duration(seconds: 5),
-      () => Navigator.pushNamed(context, MyRouters.advertisePage),
-    );
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Future.delayed(Duration(seconds: 2), () {
+        Navigator.pushNamed(context, MyRouters.loginPage);
+      });
+    });
   }
 
   @override

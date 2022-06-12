@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:shoes_app/app/routers.dart';
 import 'package:shoes_app/resources/dimens.dart';
-import 'package:shoes_app/routers/routers.dart';
 import 'package:shoes_app/widgets/commons/commons.dart';
 import '../../resources/resources.dart';
 
@@ -77,7 +77,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         controller: _fullNameController,
                         onChanged: (value) => _fullName = value,
                         validator: (value){
-                          if(value!.isEmpty || value?.length == 0){
+                          if(value!.isEmpty || value.length == 0){
                             return 'Họ và tên không hợp lệ';
                           }
                         },
@@ -118,7 +118,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         controller: _emailController,
                         onChanged: (value) => _email = value,
                         validator: (value){
-                          if(value!.isEmpty || value?.length == 0 || !value.contains('@')){
+                          if(value!.isEmpty || value.length == 0 || !value.contains('@')){
                           return 'Email khong hop le';
                           }
                           },
@@ -159,7 +159,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         controller: _passwordController,
                         onChanged: (value) => _password = value,
                         validator: (value){
-                          if(value!.isEmpty || value?.length == 0){
+                          if(value!.isEmpty || value.length == 0){
                             return 'Mat khau khong hop le';
                           }
                         },

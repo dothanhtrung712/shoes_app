@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../routers/routers.dart';
+import 'package:shoes_app/app/routers.dart';
 import '../../widgets/widgets.dart';
 import '../../resources/resources.dart';
 
