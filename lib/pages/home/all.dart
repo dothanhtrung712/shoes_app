@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shoes_app/pages/home/home.dart';
+import 'package:shoes_app/pages/home/views/home_page.dart';
 
 class HomeModule {
-  Widget buildRoute() {
+  static Widget buildRoute() {
     return HomePage();
   }
 }
